@@ -37,6 +37,7 @@ import {
   snsConfig,
   telnyxConfig,
   termiiConfig,
+  textKitConfig,
   twilioConfig,
   unifonicConfig,
 } from '../credentials';
@@ -358,5 +359,13 @@ export const smsProviders: IProviderConfig[] = [
     credentials: ruachSmsConfig,
     docReference: `https://docs.novu.co/platform/integrations/sms/ruach-sms${UTM_CAMPAIGN_QUERY_PARAM}`,
     logoFileName: { light: 'ruach-sms.svg', dark: 'ruach-sms.svg' },
+  },
+  {
+    id: SmsProviderIdEnum.TextKit,
+    displayName: 'TextKit',
+    channel: ChannelTypeEnum.SMS,
+    credentials: textKitConfig,
+    docReference: 'https://jointextkit.com/docs/quickstart',
+    logoFileName: { light: 'textkit.svg', dark: 'textkit.svg' },
   },
 ];

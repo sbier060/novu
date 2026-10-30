@@ -411,6 +411,22 @@ export const termiiConfig: IConfigCredential[] = [
   ...smsConfigBase,
 ];
 
+export const textKitConfig: IConfigCredential[] = [
+  {
+    key: CredentialsKeyEnum.ApiKey,
+    displayName: 'API Key',
+    type: 'string',
+    required: true,
+  },
+  {
+    key: CredentialsKeyEnum.From,
+    displayName: 'From',
+    type: 'string',
+    description: 'A sending number or pool id. Optional when the account has one number.',
+    required: false,
+  },
+];
+
 export const burstSmsConfig: IConfigCredential[] = [
   {
     key: CredentialsKeyEnum.ApiKey,

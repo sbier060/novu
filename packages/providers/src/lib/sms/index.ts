@@ -36,5 +36,6 @@ export * from './sns/sns.provider';
 export * from './telnyx/telnyx.interface';
 export * from './telnyx/telnyx.provider';
 export * from './termii/termii.provider';
+export * from './textkit/textkit.provider';
 export * from './twilio/twilio.provider';
 export * from './unifonic/unifonic.provider';

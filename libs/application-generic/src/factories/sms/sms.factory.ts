@@ -36,6 +36,7 @@ import {
   SnsHandler,
   TelnyxHandler,
   TermiiSmsHandler,
+  TextKitSmsHandler,
   TwilioHandler,
   UnifonicHandler,
 } from './handlers';
@@ -83,6 +84,7 @@ export class SmsFactory implements ISmsFactory {
     new ISendProSmsHandler(),
     new CmTelecomHandler(),
     new RuachSmsHandler(),
+    new TextKitSmsHandler(),
   ];
 
   getHandler(integration: Pick<IntegrationEntity, 'credentials' | 'channel' | 'providerId' | 'configurations'>) {
